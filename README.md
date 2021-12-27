@@ -1,2 +1,2 @@
-# antiweeb-bot
-bot that calls people who type anime titles virgins
+# WikiBot
+Bot that replies with the first wikipedia search entry. 
