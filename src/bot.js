@@ -14,7 +14,12 @@ const getsendWikipedia = (messagemethod,newmessage) =>{
             let wiki = JSON.parse(body);
             let title = wiki[1][0];
             let result = wiki[3][0];
-            messagemethod.reply('You searched for ' + title +'. It\'s main article is located here: ' + '\n' + result)
+            if (title === undefined){
+                messagemethod.reply('Sorry, your search turned up no results :(')
+            }
+            else{
+                messagemethod.reply('You searched for ' + title +'. It\'s main article is located here: ' + '\n' + result)
+            }
         }
     });
 }
